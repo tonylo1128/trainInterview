@@ -1,8 +1,9 @@
 import { envVariable } from "../config";
 
 export async function getTrainStation() {
+  let resp;
   try {
-    let resp = await fetch(envVariable.TRAIN_POSITIONS_APICALL, {
+    resp = await fetch(envVariable.TRAIN_POSITIONS_APICALL, {
       method: "GET",
       Host: "api.wmata.com",
       headers: {
