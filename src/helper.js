@@ -34,5 +34,10 @@ export default function filteration(filterationType, train, setSortedTrain) {
       console.log(temp);
       setSortedTrain(temp);
       break;
+
+    case "all":
+    default:
+      temp["all"] = [...train];
+      setSortedTrain(temp);
   }
 }

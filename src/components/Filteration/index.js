@@ -9,6 +9,15 @@ function Filteration({ train, setSortedTrain }) {
         <button
           className=""
           onClick={() => {
+            filteration("all", train, setSortedTrain);
+          }}
+        >
+          Reset to All
+        </button>
+
+        <button
+          className=""
+          onClick={() => {
             filteration("LineCode", train, setSortedTrain);
           }}
         >
