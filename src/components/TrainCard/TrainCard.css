@@ -16,6 +16,8 @@
   border-radius: 50%;
   cursor: pointer;
   transition: 0.3s all;
+
+  margin: 0 var(--spacing-m);
 }
 
 .collapse-btn:before,
@@ -64,6 +66,7 @@
 h1 {
   cursor: pointer;
   position: relative;
+  margin: var(--spacing-m);
 }
 
 h1:before {
@@ -75,7 +78,7 @@ h1:before {
   color: #fff;
   text-align: center;
   border-radius: 5px;
-  padding: 5px 0;
+  padding: var(--spacing-s) 0;
   transition: opacity 1s ease-in-out;
 
   position: absolute;

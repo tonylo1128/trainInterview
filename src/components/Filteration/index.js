@@ -4,7 +4,7 @@ import filteration from "../../helper";
 function Filteration({ train, setSortedTrain }) {
   return (
     <div className="filteration-container">
-      <div className="">Filteration:</div>
+      <div className="filteration-title">Filteration:</div>
       <div className="filteration-btn-container">
         <button
           className=""

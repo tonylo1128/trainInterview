@@ -11,13 +11,18 @@
   color: white;
 }
 
+.filteration-title {
+  margin: var(--spacing-m);
+  margin-bottom: 0;
+}
+
 .filteration-btn-container {
   display: flex;
 }
 
 .filteration-btn-container button {
-  margin: 15px;
-  padding: 5px;
+  margin: var(--spacing-m);
+  padding: var(--spacing-s);
   background-color: #fafbfc;
   border: 1px solid rgba(27, 31, 35, 0.15);
   border-color: rgba(27, 31, 35, 0.15);
