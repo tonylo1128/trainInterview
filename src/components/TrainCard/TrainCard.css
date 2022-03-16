@@ -50,8 +50,8 @@
 .train-card-continaer {
   border-radius: 25px;
   border: 1px solid black;
-  margin: 15px;
-  padding: 15px;
+  margin: var(--spacing-m);
+  padding: var(--spacing-m);
 }
 
 .collapse {
