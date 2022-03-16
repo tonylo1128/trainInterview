@@ -4,14 +4,17 @@ import "./TrainCard.css";
 function TrainCard({ train, sortedTrain }) {
   let collapseHandler = (event) => {
     let collapseTarget = event.target.nextSibling;
-
-    console.log(collapseTarget);
-    console.log(collapseTarget.classList);
-
+    let expendBtn = event.target.children[1];
     if (collapseTarget.classList.contains("active")) {
       collapseTarget.classList.remove("active");
     } else {
       collapseTarget.classList.add("active");
+    }
+
+    if (expendBtn.classList.contains("transfrom")) {
+      expendBtn.classList.remove("transfrom");
+    } else {
+      expendBtn.classList.add("transfrom");
     }
   };
 
@@ -21,14 +24,16 @@ function TrainCard({ train, sortedTrain }) {
         ? Object.entries(sortedTrain).map((item, index) => {
             return (
               <div>
-                <h1
-                  data-hover="Click to collapse"
+                <div
+                  className="title-container"
                   onClick={(event) => {
                     collapseHandler(event);
                   }}
                 >
-                  {item[0]}
-                </h1>
+                  <h1 data-hover="Click to collapse">{item[0]}</h1>
+                  <div className="collapse-btn"></div>
+                </div>
+
                 <div className={"collapse" + " " + "active"}>
                   {item[1].map((item, index) => {
                     return (

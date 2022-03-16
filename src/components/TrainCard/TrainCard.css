@@ -1,3 +1,45 @@
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: antiquewhite;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.collapse-btn {
+  position: relative;
+  border-width: 2px;
+  border-style: solid;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.collapse-btn:before,
+.collapse-btn:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.collapse-btn:before {
+  border-bottom: 2px solid black;
+  width: 15px;
+}
+.collapse-btn:after {
+  border-left: 2px solid black;
+  height: 15px;
+}
+
+.transfrom::after {
+  border-left: 0;
+}
+
 .train-card-main-container {
   display: flex;
   width: 100%;
